@@ -10,7 +10,7 @@ To do:
 2. Download DockerHub on the desktop
 3. Create an image and run it as a contatiner using Docker ( If 1 is figured out 2 is pretty much done)
    Create image using: docker build -t "name of image" .         => Run this inside the directory in which there is the Dockerfile and app.y
-   To run the container: docker run "name of image"              => Additional port mapping if required (depends on 1 again)
+   To run the container: docker run -it -p 5000:5000 "name of image"
 4. Create a pipeline in Jenkins and use webhooks
 5. Prepare the presentation 
 6. Follow up on the date, time slot etc
