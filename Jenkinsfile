@@ -1,4 +1,4 @@
-def projectName = 'FreestyleChatApp'
+def projectName = 'PipelineChatApp'
 def version = "0.0.${currentBuild.number}"
 def dockerImageTag = "${projectName}:${version}"
 
@@ -8,11 +8,13 @@ pipeline {
   stages {
     stage('Test') {
       steps {
+        echo 'testing'
       }
     }
 
     stage('Build') {
       steps {
+        echo 'building'
       }
     }
 
