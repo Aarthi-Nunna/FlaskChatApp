@@ -1,6 +1,6 @@
-def projectName = 'PipelineChatApp'
+def projectName = 'pipelinechatapp'
 def version = "0.0.${currentBuild.number}"
-def dockerImageTag = "${projectName}:${version}"
+def dockerImageTag = 'pipelinechatapp'
 
 pipeline {
   agent any
