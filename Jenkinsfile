@@ -26,7 +26,7 @@ pipeline {
 
     stage('Deploy Container To Openshift') {
       steps {
-        bat "docker run -it -p 5000:5000 ${dockerImageTag}"
+        bat "docker run -p 5000:5000 ${dockerImageTag}"
       }
     }
   }
