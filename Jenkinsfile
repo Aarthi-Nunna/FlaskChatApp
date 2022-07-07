@@ -20,13 +20,13 @@ pipeline {
 
     stage('Build Container') {
       steps {
-        bat "docker build -t ${dockerImageTag} ."
+        sh "docker build -t ${dockerImageTag} ."
       }
     }
 
     stage('Deploy Container To Openshift') {
       steps {
-        bat "docker run -p 5000:5000 ${dockerImageTag}"
+        sh "docker run -p 5000:5000 ${dockerImageTag}"
       }
     }
   }
